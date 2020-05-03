@@ -12,7 +12,8 @@ Since version 0.107, the Home Assistant docker image uses the [S6-Overlay](https
 Finally, some packages on Alpine (homeassistant's base image) are buggy if not running as root (like ping). For that reason, the custom run script supports installing extra packages, specified in the `PACKAGES` environment variable, before starting Home-Assistant.
 
 ## HEALTHCHECK feature
-The HEALTHCHECK entry of Dockerfile use the configuration.yaml to get the right URL to test with curl
+The HEALTHCHECK entry of Dockerfile use the configuration.yaml to get the right URL to test with curl.
+
 Everything should work without changing anything
 
 ## Usage
